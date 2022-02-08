@@ -1,0 +1,150 @@
+body {
+  background-color: hsla(0, 0%, 100%, 1);
+  font-family: Lora, sans-serif;
+}
+
+footer {
+  background-color: hsla(270, 90%, 100%, 0.5);
+}
+
+footer a {
+  margin-left: 3vw;
+}
+
+h1, .bottom h2, nav, footer, article {
+  padding: 1vh 1vw;
+}
+
+h1, h2, nav, footer, aside, p {
+  text-align: center;
+}
+
+article {
+  text-align: justify;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-right: 1vw;
+}
+
+section.bottom img {
+  display: inline-block;
+}
+
+img.dalmatian {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 320px;
+}
+
+img.football {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+header {
+  border: 1px solid black;
+  /* gör en outline på ytan */
+  border-radius: 25px;
+  /* gör kanterna lena */
+  margin-left: auto;
+  /* left och right har lika stort */
+  margin-right: auto;
+  /* avstånd och därför CENTRERAS objektet */
+  width: 70%;
+}
+
+aside {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+/* a element börjar*/
+a {
+  color: hsla(90, 0%, 30%, 1);
+  text-decoration: none;
+}
+
+a:hover {
+  /* a:hover gäller för a elementet då förhållande att man hover över gäller */
+  text-decoration: underline;
+}
+
+/* a element slutar*/
+nav a {
+  font-size: 1.9rem;
+  margin-left: 5vw;
+}
+
+section.top {}
+
+@media only screen and (min-width: 600px) {
+  section.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*Layout end*/
+/*Form start*/
+form {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 700px;
+  /*ORIGINELLT 600 PX*/
+}
+
+label {
+  margin: 1vh 1vw 0 0;
+}
+
+input, select, textarea {
+  margin: 0 1vw 0 1vw
+}
+
+legend {
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  form {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  legend {
+    grid-column: 1;
+    text-align: right;
+  }
+
+  label {
+    grid-column: 1;
+    text-align: right;
+    margin: 1vh 1vw;
+  }
+
+  input, select, button {
+    grid-column: 2/-1;
+    margin: 1vh 1vw;
+  }
+
+  input {
+    padding: 20px;
+    margin: 15px;
+  }
+
+  button {
+    margin: 10px;
+    padding: 20px;
+  }
+}
+
+/*Form end*/
